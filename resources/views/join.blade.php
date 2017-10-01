@@ -12,7 +12,7 @@
 <div class="columns" id="forms">
   <div class="column is-half is-offset-one-quarter">
     @if ($errors->any())
-    <div class="content" id="errors-box">
+    <div class="content has-text-danger" id="errors-box">
       <ul id="errors-list" class="">
         @foreach ($errors->all() as $error)
         <li>{{ $error }}</li>
@@ -79,7 +79,10 @@
 
   function hideErrors()
   {
+    if(document.getElementById('errors-box'))
+    {
       document.getElementById('errors-box').classList.add("is-hidden");
+    }
   }
 </script>
 @endsection
