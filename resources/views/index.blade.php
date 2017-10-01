@@ -61,6 +61,7 @@ SheCode
   </div>
 </div>
 
+@if(env('JOIN_ENABLE', false))
 <div class="section">
   <h1 class="title has-text-centered">{{ $faker->sentence() }}</h1>
   <div class="columns is-mobile is-centered">
@@ -69,4 +70,5 @@ SheCode
         </div>
       </div>
 </div>
+@endif
 @endsection
