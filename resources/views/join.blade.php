@@ -60,7 +60,7 @@
       </div>
       <div class="field is-grouped is-grouped-centered">
         <div class="control">
-          <a href="/" class="button is-link">Cancel</a>
+          <a href="/" class="button is-light">Cancel</a>
         </div>
         <div class="control">
           <button type="submit" class="button is-primary">Submit</button>
