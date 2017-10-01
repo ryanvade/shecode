@@ -40,28 +40,30 @@
       </span>
         </p>
       </div>
-      <label class="label">Permission Slip</label>
-      <div class="file has-name">
-        <label class="file-label">
-      <input id="file" class="file-input" type="file" onchange="getFileName(this.files)" name="doc">
-      <span class="file-cta">
-        <span class="file-icon">
-          <i class="fa fa-upload"></i>
-        </span>
-        <span class="file-label">
-          Choose a file…
-        </span>
-      </span>
-      <span class="file-name" id="filename">
-      </span>
-    </label>
-  </div>
-      <div class="field is-grouped">
-        <div class="control">
+      <div class="field">
+        <label class="label">Permission Slip</label>
+        <div class="file has-name">
+          <label class="file-label">
+            <input id="file" class="file-input" type="file" onchange="getFileName(this.files)" name="doc">
+            <span class="file-cta">
+              <span class="file-icon">
+                <i class="fa fa-upload"></i>
+              </span>
+              <span class="file-label">
+                Choose a file…
+              </span>
+            </span>
+            <span class="file-name" id="filename">
+            </span>
+          </label>
         </div>
-        <button type="submit" class="button is-primary">Submit</button>
+      </div>
+      <div class="field is-grouped is-grouped-centered">
         <div class="control">
           <a href="/" class="button is-link">Cancel</a>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-primary">Submit</button>
         </div>
       </div>
     </form>

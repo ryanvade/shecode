@@ -25,7 +25,7 @@ SheCode
 @section('content')
 <div class="section">
   <h1 class="title has-text-centered">{{ $faker->sentence() }}</h1>
-  <div class="columns title">
+  <div class="columns">
     <div class="column">
       <div class="content is-medium">
         <p>{{ $faker->paragraph(15) }}</p>

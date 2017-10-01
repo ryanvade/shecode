@@ -3,7 +3,11 @@
 // @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
-@import "variables";
+@import "~bulma/sass/utilities/initial-variables";
+
+// $red: #e91c24;
+$orange: #e87b1b;
+$primary: $orange;
 
 // Bootstrap
 @import "~bulma";
