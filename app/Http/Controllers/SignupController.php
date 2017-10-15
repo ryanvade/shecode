@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Signup;
-use Faker\Factory as Faker;
+use App\Mail\FormReceived;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class SignupController extends Controller
 {
@@ -25,27 +26,10 @@ class SignupController extends Controller
      */
     public function create()
     {
-        $this->validate(request(), [
-      'name' => 'required',
-      'email' => 'required|email',
-      'doc' => 'required'
-    ]);
-        $path = request()->file('doc')->store('documents');
-        $path = $request->file('doc')->storeAs(
-    'documents', str_slug(request()->name, '')
-    );
-    
-        Signup::create([
-      'name' => request()->name,
-      'email' => request()->email,
-      'file_path' => $path
-    ]);
-        Mail::to(request()->email)->queue(new FormReceived(request()->name));
-        return view('success')->with([
-      'name' => request()->name,
-      'email' => request()->email,
-      'faker' => Faker::create()
-    ]);
+        if (!env('JOIN_ENABLE', false)) {
+            abort(404);
+        }
+        return view('join');
     }
 
     /**
@@ -56,7 +40,27 @@ class SignupController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+          'name' => 'required',
+          'email' => 'required|email',
+          'doc' => 'required'
+        ]);
+        // $path = $request->file('doc')->store('documents');
+        $path = $request->file('doc')->storeAs(
+        'documents',
+                str_slug($request->name, '') . '.' . $request->file('doc')->getClientOriginalExtension()
+        );
+
+        Signup::create([
+          'name' => $request->name,
+          'email' => $request->email,
+          'file_path' => $path
+        ]);
+        Mail::to($request->email)->queue(new FormReceived($request->name));
+        return view('success')->with([
+          'name' => $request->name,
+          'email' => $request->email
+        ]);
     }
 
     /**

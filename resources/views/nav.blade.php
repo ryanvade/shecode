@@ -1,7 +1,7 @@
 <nav class="navbar is-transparent">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <img src="/images/logo.jpg" alt="SheCode: description" width="100" height="50">
+      <img src="/images/logo.png" alt="SheCode: description" width="100" height="50">
     </a>
 
     <div class="navbar-burger burger" data-target="nav-menu">
@@ -17,8 +17,8 @@
 
     <div class="navbar-end">
       @if(env('JOIN_ENABLE', false))
-      <a class="navbar-item " href="/join">
-        Join Now
+      <a class="navbar-item " href="/register">
+        Register Now
       </a>
       @endif
       @if(env('FAQ_ENABLE', false))

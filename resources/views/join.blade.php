@@ -1,10 +1,15 @@
-@extends('main') @section('title') SheCode @endsection @section('before-content') @endsection @section('content')
+@extends('main')
+@section('title') SheCode @endsection
+@section('before-content')
+@endsection @section('content')
 <div class="section">
-  <h1 class="title has-text-centered">{{ $faker->sentence() }}</h1>
+  <h1 class="title has-text-centered">Register Now</h1>
   <div class="columns is-mobile is-centered">
     <div class="column is-half is-narrow has-text-centered">
-    <p>{{ $faker->paragraph(5)}}</p>
-      <a class="has-text-centered" href="/file">File Download</a>
+    <p>SheCode will be on December 2nd 2017, starting at 10:30 am and ending at 2:30 pm.
+      SheCode will take place in the SIUE Engineering Building, 61 Circle Drive, Edwardsville IL.
+      All participants will need a permission form signed be a parent or gaurdian at the start of SheCode.</p>
+      <a class="has-text-centered" href="/file">Download Permission Form</a>
     </div>
   </div>
 </div>
@@ -41,7 +46,7 @@
         </p>
       </div>
       <div class="field">
-        <label class="label">Permission Slip</label>
+        <label class="label">Permission Form</label>
         <div class="file has-name">
           <label class="file-label">
             <input id="file" class="file-input" type="file" onchange="getFileName(this.files)" name="doc">

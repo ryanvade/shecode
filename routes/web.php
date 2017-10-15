@@ -17,15 +17,7 @@ Route::get('/', function () use ($router) {
     ]);
 });
 
-Route::get('/join', function() use ($router) {
-  if(!env('JOIN_ENABLE', false))
-  {
-    abort(404);
-  }
-  return view('join')->with([
-    'faker' => Faker\Factory::create()
-  ]);
-});
+Route::get('/register', 'SignupController@create');
 
 Route::get('/faq', function() use ($router) {
   if(!env('FAQ_ENABLE', false))
@@ -37,7 +29,7 @@ Route::get('/faq', function() use ($router) {
   ]);
 });
 
-Route::post('/join', 'SignupController@create');
-Route::get('/mail', function(){
-  return new App\Mail\FormReceived('Ryan Owens');
-});
+Route::post('/join', 'SignupController@store');
+// Route::get('/mail', function(){
+//   return new App\Mail\FormReceived('Ryan Owens');
+// });

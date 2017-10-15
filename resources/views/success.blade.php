@@ -9,11 +9,10 @@ SheCode
 
 @section('content')
 <div class="section">
-  <h1 class="title has-text-centered"> {{ $faker->sentence() }}</h1>
+  <h1 class="title has-text-centered">Thank you for registering, {{ $name }}!</h1>
   <div class="columns is-mobile is-centered">
     <div class="column is-half is-narrow has-text-centered">
-    <p>{{ $faker->paragraph(5)}}</p>
-    <p>{{ $name }} {{ $email }}</p>
+    <p>We have sent a confirmation email to {{ $email }}</p>
     <a href="/">Home</a>
     </div>
   </div>
