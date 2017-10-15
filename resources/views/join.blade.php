@@ -5,7 +5,7 @@
 <div class="section">
   <h1 class="title has-text-centered">Register Now</h1>
   <div class="columns is-mobile is-centered">
-    <div class="column is-half is-narrow has-text-centered">
+    <div class="column is-half-desktop has-text-centered">
     <p>SheCode will be on December 2nd 2017, starting at 10:30 am and ending at 2:30 pm.
       SheCode will take place in the SIUE Engineering Building, 61 Circle Drive, Edwardsville IL.
       All participants will need a permission form signed be a parent or gaurdian at the start of SheCode.</p>

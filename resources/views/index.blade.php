@@ -84,7 +84,7 @@ SheCode
 <div class="section">
   <h1 class="title has-text-centered">Click here to register</h1>
   <div class="columns is-mobile is-centered">
-        <div class="column is-half is-narrow has-text-centered">
+        <div class="column is-half-desktop is-narrow has-text-centered">
             <a class="button is-primary is-large" href="/register">Register Now!</a>
         </div>
       </div>

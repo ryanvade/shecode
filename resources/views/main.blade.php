@@ -10,12 +10,21 @@
   <body>
     @include('nav')
     @yield('before-content')
-  <section class="section">
+  <section class="section" style="min-height: 78vh;">
     <div class="container">
       @yield('content')
     </div>
   </section>
   @yield('javascript')
-  @yield('footer')
+  <footer class="footer sticky-footer">
+    @yield('footer')
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Site by <a href="https://github.com/ryanvade">Ryan Owens</a>
+        </p>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
