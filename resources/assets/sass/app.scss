@@ -5,6 +5,14 @@
 // Variables
 @import "~bulma/sass/utilities/initial-variables";
 
+.navbar-item img {
+    max-height: 3.5em !important;
+}
+
+.navbar-burger {
+    height: 4.0em !important;
+}
+
 // $red: #e91c24;
 $orange: #e87b1b;
 $burgandy: #99195e;

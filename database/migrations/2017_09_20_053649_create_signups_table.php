@@ -18,6 +18,7 @@ class CreateSignupsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('file_path');
+	    $table->string('shirts');
             $table->timestamps();
         });
     }

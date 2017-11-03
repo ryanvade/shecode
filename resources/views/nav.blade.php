@@ -1,7 +1,7 @@
 <nav class="navbar is-transparent">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <img src="/images/logo.png" alt="SheCode: description" width="100" height="50">
+      <img src="/images/shecodePurple.png" alt="SheCode: description">
     </a>
 
     <div class="navbar-burger burger" data-target="nav-menu">

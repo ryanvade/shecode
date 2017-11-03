@@ -13,10 +13,10 @@ SheCode
   <div class="content">
     <dl>
         <dt class="has-text-weight-bold is-size-5 is-size-5-mobile">When and where?</dt>
-        <dd style="margin-bottom:20px;">SheCode is on December 2nd located at Southern Illinois University Edwardsville's Engineering Building at 61 Circle Drive, Edwardsville, IL 62025.</dd>
+        <dd style="margin-bottom:20px;">SheCode is on December 2nd located at <a href="https://goo.gl/maps/y6jrS4WREQ72">Southern Illinois University Edwardsville's Engineering Building.</a></dd>
 
         <dt class="has-text-weight-bold is-size-5 is-size-5-mobile">Where do I park?</dt>
-        <dd style="margin-bottom:20px;">Parking is available in parking lot E directly behind the Engineering Building.</dd>
+        <dd style="margin-bottom:20px;">Parking is available for free in <a href="https://goo.gl/maps/74q8UHeYqZH2">visitor lot B</a> near the engineering building.</dd>
 
         <dt class="has-text-weight-bold is-size-5 is-size-5-mobile">Who can participate?</dt>
         <dd style="margin-bottom:20px;">This event is geared towards female high school students. However, mentors will be available for each team to help.</dd>

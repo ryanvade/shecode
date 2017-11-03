@@ -6,10 +6,10 @@
   <h1 class="title has-text-centered">Register Now</h1>
   <div class="columns is-mobile is-centered">
     <div class="column is-half-desktop has-text-centered">
-    <p>SheCode will be on December 2nd 2017, starting at 10:30 am and ending at 2:30 pm.
-      SheCode will take place in the SIUE Engineering Building, 61 Circle Drive, Edwardsville IL.
-      All participants will need a permission form signed be a parent or gaurdian at the start of SheCode.</p>
-      <a class="has-text-centered" href="/file">Download Permission Form</a>
+    <p>SheCode will be on December 2nd 2017, starting at 10:30 am and ending at 2:30 pm in the <a href="https://goo.gl/maps/y6jrS4WREQ72">SIUE Engineering
+      Building</a>.
+      All participants will need a permission form signed by a parent or guardian at the start of SheCode.</p>
+      <a class="has-text-centered" href="/release_form.pdf">Download Permission Form</a>
     </div>
   </div>
 </div>
@@ -43,6 +43,21 @@
           <span class="icon is-small is-right">
         <i class="fa fa-check"></i>
       </span>
+        </p>
+      </div>
+      <div class="field">
+        <label class="label">T-shirt Size</label>
+        <p>
+        <div class="control">
+	  <select class="input" class="control" name="shirts" onchange="hideErrors()">
+	    <option value="xs">XS</option>
+	    <option value="s">S</option>
+	    <option selected="selected" value="m">M</option>
+	    <option value="l">L</option>
+	    <option value="xl">XL</option>
+	  </select> 
+          <span class="icon is-small is-left">
+	</div>
         </p>
       </div>
       <div class="field">
