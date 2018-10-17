@@ -48,10 +48,15 @@ class SignupController extends Controller
           'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
-        $path = $request->file('doc')->storeAs(
-        'documents',
-                str_slug($request->name, '') . '.' . $request->file('doc')->getClientOriginalExtension()
-        );
+        if ($path != null) {
+          $path = $request->file('doc')->storeAs(
+          'documents',
+                  str_slug($request->name, '') . '.' . $request->file('doc')->getClientOriginalExtension()
+          );
+        } else {
+          $path = 'no file';
+        }
+
 
         Signup::create([
           'name' => $request->name,
