@@ -17,7 +17,7 @@ class CreateSignupsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email');
-            $table->string('allergies')
+            $table->string('allergies');
             $table->string('file_path');
 	          $table->string('shirts');
             $table->timestamps();
