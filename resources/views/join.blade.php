@@ -49,6 +49,15 @@
       </span>
         </p>
       </div>
+
+      <div class="field">
+        <label class="label">Allergies / Food Preferences</label>
+        <div class="control">
+          <input id="allergies" class="input" type="text" placeholder="List All Allergies" name="allergies" onchange="hideErrors()">
+          <textarea name="Text1" cols="40" rows="5"></textarea>
+        </div>
+      </div>
+
       <div class="field">
         <label class="label">T-shirt Size</label>
         <p>

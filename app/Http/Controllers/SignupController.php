@@ -43,8 +43,9 @@ class SignupController extends Controller
         $this->validate($request, [
           'name' => 'required',
           'email' => 'required|email',
-	  'shirts' => 'required',
-          'doc' => 'required'
+	        'shirts' => 'required',
+          'allergies' => 'required',
+          'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
         $path = $request->file('doc')->storeAs(
@@ -55,6 +56,7 @@ class SignupController extends Controller
         Signup::create([
           'name' => $request->name,
           'email' => $request->email,
+          'allergies' => $request->allergies,
           'file_path' => $path,
           'shirts' => $request->shirts
         ]);
