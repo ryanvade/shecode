@@ -10,14 +10,9 @@
       Building</a>.
       All participants will need a permission form signed by a parent or guardian at the start of SheCode.</p>
       <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf">Download Minor Permission Form</a>
-    </div>
-  </div>
-</div>
-<div class="section">
-  <div class="columns is-mobile is-centered">
-    <div class="column is-half-desktop has-text-centered">
-    <p>If you or your child is over the age of 18, this form must be filled out and brought with you or uploaded below.</p>
-      <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf">Download Adult Permission Form</a>
+      <br>
+      <p>If you or your child is over the age of 18, this form must be filled out and brought with you or uploaded below.</p>
+        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf">Download Adult Permission Form</a>
     </div>
   </div>
 </div>
