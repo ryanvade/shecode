@@ -8,7 +8,7 @@ SheCode
 <section class="hero is-medium is-primary is-bold">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <img src="/images/shecodeWhite.png" alt="SheCode" width="50%">
+      <img class="is-hidden-mobile" src="/images/shecodeWhite.png" alt="SheCode" width="50%">
       <h2 class="subtitle">
         Saturday December 1st, 2018<br>
 	<br>
@@ -25,7 +25,7 @@ SheCode
     <div class="column">
       <h1 class="title has-text-centered">What is SheCode?</h1>
       <div class="content is-medium">
-The field of Computer Science is an ever growing field with growing numbers and variety of career opportunities. Even careers not normally associated with computing are increasingly making use of computing and technology. For a variety of reasons, women tend to participate in the study of computing and computing careers less than men.
+The field of Computer Science is an ever-growing field with growing numbers and variety of career opportunities. Even careers not normally associated with computing are increasingly making use of computing and technology. For a variety of reasons, women tend to participate in the study of computing and computing careers less than men.
 
 At SheCode we aim to provide a way to get young women interested in the field before they even step foot on a college campus. The SheCode event invites female middle school and high school students to SIUE to participate in a programming project and learn more about computing. We will bring professional women in computing careers to SIUE to mentor the participants.
 
@@ -43,7 +43,7 @@ By providing the mentorship and experience to get started in computing we hope S
     <div class="column">
       <h1 class="title has-text-centered">Why should my daughter go?</h1>
       <div class="content is-medium">
-        <p>The field of Computer Science is an ever growing field with limitless opportunities. However, there is great lack of women. This creates the perfect opportunity for women seeking to enter Computer Science but they still need the skills. At SheCode we aim to provide a way to get young women interested in the field before they even step foot on a college campus. By providing the mentorship and experience to get started we hope SheCode will give your daughter the push to consider Computer Science in the future.</p>
+        <p>The field of Computer Science is an ever-growing field with limitless opportunities. However, there is great lack of women. This creates the perfect opportunity for women seeking to enter Computer Science but they still need the skills. At SheCode we aim to provide a way to get young women interested in the field before they even step foot on a college campus. By providing the mentorship and experience to get started we hope SheCode will give your daughter the push to consider Computer Science in the future.</p>
       </div>
     </div>
   </div>

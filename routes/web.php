@@ -24,9 +24,7 @@ Route::get('/faq', function() use ($router) {
   {
     abort(404);
   }
-  return view('faq')->with([
-    'faker' => Faker\Factory::create()
-  ]);
+  return view('faq');
 });
 
 Route::post('/join', 'SignupController@store');
