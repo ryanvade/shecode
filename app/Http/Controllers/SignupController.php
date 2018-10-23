@@ -48,43 +48,43 @@ class SignupController extends Controller
           'guardianEmail' => 'nullable|email',
           'guardianNumber' => 'nullable|regex:/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/',
           'email' => 'required|email',
-	        'shirts' => 'required',
+            'shirts' => 'required',
           'allergies' => 'required',
           'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
 
         if ($request->has('doc')) {
-          $path = $request->file('doc')->storeAs(
+            $path = $request->file('doc')->storeAs(
           'documents',
                   str_slug($request->name, '') . '.' . $request->file('doc')->getClientOriginalExtension()
           );
         } else {
-          $path = 'no file';
+            $path = 'no file';
         }
 
-        if($request->has('guardianFirst')) {
-           $guardianFirstVar = $request->guardianFirst;
+        if ($request->has('guardianFirst')) {
+            $guardianFirstVar = $request->guardianFirst;
         } else {
-          $guardianFirstVar = 'No Parent / Guardian Entered';
+            $guardianFirstVar = 'No Parent or Guardian Entered';
         }
 
-        if($request->has('guardianLast')) {
-           $guardianLastVar = $request->guardianLast;
+        if ($request->has('guardianLast')) {
+            $guardianLastVar = $request->guardianLast;
         } else {
-          $guardianLastVar = 'No Parent / Guardian Entered';
+            $guardianLastVar = 'No Parent or Guardian Entered';
         }
 
-        if($request->has('guardianEmail')) {
-           $guardianEmailVar = $request->guardianEmail;
+        if ($request->has('guardianEmail')) {
+            $guardianEmailVar = $request->guardianEmail;
         } else {
-          $guardianEmailVar = 'No Parent / Guardian Email Entered';
+            $guardianEmailVar = 'No Parent or Guardian Email Entered';
         }
 
-        if($request->has('guardianNumber')) {
-           $guardianNumberVar = $request->guardianNumber;
+        if ($request->has('guardianNumber')) {
+            $guardianNumberVar = $request->guardianNumber;
         } else {
-          $guardianNumberVar = '555-555-5555';
+            $guardianNumberVar = '555-555-5555';
         }
 
         Signup::create([
