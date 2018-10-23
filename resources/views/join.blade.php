@@ -44,7 +44,7 @@
       <div class="field">
         <label class="label">Last</label>
         <div class="control">
-          <input id="name" class="input" type="text" placeholder="Last Name" name="last" onchange="hideErrors()">
+          <input id="last" class="input" type="text" placeholder="Last Name" name="last" onchange="hideErrors()">
         </div>
       </div>
       <!-- END Last Name Field -->
@@ -68,7 +68,7 @@
       <div class="field">
         <label class="label">Parent / Guardian First Name</label>
         <div class="control">
-          <input id="name" class="input" type="text" placeholder="Parent or Guardian First Name" name="guardianFirst" onchange="hideErrors()">
+          <input id="guardianFirst" class="input" type="text" placeholder="Parent or Guardian First Name" name="guardianFirst" onchange="hideErrors()">
         </div>
       </div>
       <!-- END Guardian First Name Field -->
@@ -77,7 +77,7 @@
       <div class="field">
         <label class="label">Parent / Guardian Last Name</label>
         <div class="control">
-          <input id="name" class="input" type="text" placeholder="Parent or Guardian Last Name" name="guardianLast" onchange="hideErrors()">
+          <input id="guardianLast" class="input" type="text" placeholder="Parent or Guardian Last Name" name="guardianLast" onchange="hideErrors()">
         </div>
       </div>
       <!-- END Guardian Last Name Field -->
@@ -86,7 +86,7 @@
       <div class="field">
         <label class="label">Parent / Guardian Email</label>
         <p class="control has-icons-left has-icons-right">
-          <input id="email" class="input" type="email" placeholder="Parent or Guardian Email" name="guardianEmail" onchange="hideErrors()">
+          <input id="guardianEmail" class="input" type="email" placeholder="Parent or Guardian Email" name="guardianEmail" onchange="hideErrors()">
           <span class="icon is-small is-left">
         <i class="fa fa-envelope"></i>
       </span>
@@ -96,6 +96,15 @@
         </p>
       </div>
       <!-- END Guardian Email Field -->
+
+      <!-- Guardian Phone Number -->
+      <div class="field">
+        <label class="label">Parent / Guardian Phone Number</label>
+        <div class="control">
+          <input id="guardianNumber" class="input" type="tel" placeholder="555-555-5555" name="guardianNumber" onchange="hideErrors()">
+        </div>
+      </div>
+      <!-- END Guardian Phone Number -->
 
       <!-- Allergies Field -->
       <div class="field">
