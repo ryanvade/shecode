@@ -53,7 +53,7 @@ class SignupController extends Controller
           'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
-
+      
         if ($request->has('doc')) {
           $path = $request->file('doc')->storeAs(
           'documents',
@@ -62,6 +62,7 @@ class SignupController extends Controller
         } else {
           $path = 'no file';
         }
+<<<<<<< HEAD
 
         if($request->has('guardianFirst')) {
            $guardianFirst = $request->guardianFirst;
@@ -87,6 +88,9 @@ class SignupController extends Controller
           $guardianNumber = 'No Parent / Guardian Number Entered';
         }
 
+=======
+      
+>>>>>>> 1998393f92fc5f1884c3aff9ac39c58e263ebcab
         Signup::create([
           'first' => $request->name,
           'last' => $request->last,
