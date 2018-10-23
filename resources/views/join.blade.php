@@ -9,11 +9,11 @@
     <p>SheCode will be on December 1st 2018, starting at 10:00 am and ending at 2:30 pm in the <a href="https://goo.gl/maps/y6jrS4WREQ72">SIUE Engineering
       Building</a>.
       All participants will need a permission form signed by a parent or guardian at the start of SheCode.</p>
-      <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf">Download Minor Permission Form</a>
+      <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf" target="_blank">Download Minor Permission Form</a>
       <br>
       <br>
       <p>If you or your child is over the age of 18, this form must be filled out and brought with you or uploaded below.</p>
-        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf">Download Adult Permission Form</a>
+        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf" target="_blank">Download Adult Permission Form</a>
     </div>
   </div>
 </div>
@@ -144,7 +144,7 @@
         </div>
       </div>
       <!-- END Permission Form Field -->
-      
+
       <div class="field is-grouped is-grouped-centered">
         <div class="control">
           <a href="/" class="button is-light">Cancel</a>
