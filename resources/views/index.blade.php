@@ -10,7 +10,7 @@ SheCode
     <div class="container has-text-centered">
       <img class="is-hidden-mobile" src="/images/shecodeWhite.png" alt="SheCode" width="50%">
       <h2 class="subtitle">
-        Saturday Decemeber 2nd, 2017<br>
+        Saturday December 1st, 2018<br>
 	<br>
 	Shecode is a one day educational experience to introduce young women to computer science and problem solving
       </h2>
@@ -58,22 +58,31 @@ By providing the mentorship and experience to get started in computing we hope S
           <th>Start Time</th>
           <th>Description</th>
         </tr>
+
+        <!--10 am check in
+
+10:15 form teams (edited)
+10:30 welcome/intro (edited)
+
+Taylor Dowdy [5:38 PM]
+10:45 start working on projects-->
+
       </thead>
       <tb>
         <tr>
-          <td>10:30 am</td>
+          <td>10:00 am</td>
           <td>Check in begins</td>
         </tr>
         <tr>
-          <td>10:45 am</td>
+          <td>10:15 am</td>
           <td>Form teams</td>
         </tr>
         <tr>
-          <td>11:00 am</td>
+          <td>10:30 am</td>
           <td>Welcome/Introduction</td>
         </tr>
         <tr>
-          <td>11:15 am</td>
+          <td>10:45 am</td>
           <td>Begin working on project</td>
         </tr>
         <tr>

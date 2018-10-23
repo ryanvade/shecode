@@ -6,10 +6,14 @@
   <h1 class="title has-text-centered">Register Now</h1>
   <div class="columns is-mobile is-centered">
     <div class="column is-half-desktop has-text-centered">
-    <p>SheCode will be on December 2nd 2017, starting at 10:30 am and ending at 2:30 pm in the <a href="https://goo.gl/maps/y6jrS4WREQ72">SIUE Engineering
+    <p>SheCode will be on December 1st 2018, starting at 10:00 am and ending at 2:30 pm in the <a href="https://goo.gl/maps/y6jrS4WREQ72">SIUE Engineering
       Building</a>.
       All participants will need a permission form signed by a parent or guardian at the start of SheCode.</p>
-      <a class="has-text-centered" href="/release_form.pdf">Download Permission Form</a>
+      <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf">Download Minor Permission Form</a>
+      <br>
+      <br>
+      <p>If you or your child is over the age of 18, this form must be filled out and brought with you or uploaded below.</p>
+        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf">Download Adult Permission Form</a>
     </div>
   </div>
 </div>
@@ -45,6 +49,14 @@
       </span>
         </p>
       </div>
+
+      <div class="field">
+        <label class="label">Allergies / Food Preferences</label>
+        <div class="control">
+          <textarea id="allergies" class="textarea" rows="5" placeholder="List All Allergies" name="allergies" onchange="hideErrors()"></textarea>
+        </div>
+      </div>
+
       <div class="field">
         <label class="label">T-shirt Size</label>
         <p>
@@ -55,7 +67,7 @@
 	    <option selected="selected" value="m">M</option>
 	    <option value="l">L</option>
 	    <option value="xl">XL</option>
-	  </select> 
+	  </select>
           <span class="icon is-small is-left">
 	</div>
         </p>
