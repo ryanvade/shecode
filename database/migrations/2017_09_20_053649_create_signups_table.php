@@ -21,6 +21,7 @@ class CreateSignupsTable extends Migration
             $table->string('guardianFirst');
             $table->string('guardianLast');
             $table->string('guardianEmail');
+            $table->string('guardianNumber');
             $table->string('allergies', 500);
             $table->string('file_path');
 	          $table->string('shirts');
