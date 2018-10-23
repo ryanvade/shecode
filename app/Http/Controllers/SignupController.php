@@ -62,8 +62,7 @@ class SignupController extends Controller
         } else {
           $path = 'no file';
         }
-
-
+        
         Signup::create([
           'first' => $request->name,
           'last' => $request->last,
