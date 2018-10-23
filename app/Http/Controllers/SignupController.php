@@ -84,7 +84,7 @@ class SignupController extends Controller
         if($request->has('guardianNumber')) {
            $guardianNumberVar = $request->guardianNumber;
         } else {
-          $guardianNumberVar = 'No Parent / Guardian Number Entered';
+          $guardianNumberVar = '555-555-5555';
         }
 
         Signup::create([
