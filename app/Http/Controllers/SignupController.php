@@ -53,7 +53,7 @@ class SignupController extends Controller
           'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
-
+      
         if ($request->has('doc')) {
           $path = $request->file('doc')->storeAs(
           'documents',
@@ -62,8 +62,7 @@ class SignupController extends Controller
         } else {
           $path = 'no file';
         }
-
-
+      
         Signup::create([
           'first' => $request->name,
           'last' => $request->last,
