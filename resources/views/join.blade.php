@@ -53,7 +53,7 @@
       <div class="field">
         <label class="label">Allergies / Food Preferences</label>
         <div class="control">
-          <textarea id="allergies" class="input" rows="5" placeholder="List All Allergies" name="allergies" onchange="hideErrors()"></textarea>
+          <textarea id="allergies" class="textarea" rows="5" placeholder="List All Allergies" name="allergies" onchange="hideErrors()"></textarea>
         </div>
       </div>
 

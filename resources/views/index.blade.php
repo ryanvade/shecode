@@ -10,7 +10,7 @@ SheCode
     <div class="container has-text-centered">
       <img src="/images/shecodeWhite.png" alt="SheCode" width="50%">
       <h2 class="subtitle">
-        Saturday Decemeber 1st, 2018<br>
+        Saturday December 1st, 2018<br>
 	<br>
 	Shecode is a one day educational experience to introduce young women to computer science and problem solving
       </h2>
