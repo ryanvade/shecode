@@ -63,28 +63,28 @@ class SignupController extends Controller
             $path = 'no file';
         }
 
-        if ($request->has('guardianFirst')) {
-            $guardianFirstVar = $request->guardianFirst;
+        if (!empty($request->input('guardianFirst'))) {
+            $guardianFirstVar = $request->input('guardianFirst');
         } else {
             $guardianFirstVar = 'No Parent or Guardian Entered';
         }
 
-        if ($request->has('guardianLast')) {
-            $guardianLastVar = $request->guardianLast;
+        if (!empty($request->input('guardianLast'))) {
+            $guardianLastVar = $request->input('guardianLast');
         } else {
             $guardianLastVar = 'No Parent or Guardian Entered';
         }
 
-        if ($request->has('guardianEmail')) {
-            $guardianEmailVar = $request->guardianEmail;
+        if (!empty($request->input('guardianEmail'))) {
+            $guardianEmailVar = $request->input('guardianEmail');
         } else {
             $guardianEmailVar = 'No Parent or Guardian Email Entered';
         }
 
-        if ($request->has('guardianNumber')) {
-            $guardianNumberVar = $request->guardianNumber;
+        if (!empty($request->input('guardianNumber'))) {
+            $guardianNumberVar = $request->input('guardianNumber');
         } else {
-            $guardianNumberVar = '555-555-5555';
+            $guardianNumberVar = 'No Number';
         }
 
         Signup::create([
