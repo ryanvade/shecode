@@ -42,12 +42,17 @@ class SignupController extends Controller
     {
         $this->validate($request, [
           'name' => 'required',
+          'last' => 'required',
+          'guardianFirst' => 'nullable',
+          'guardianLast' => 'nullable',
+          'guardianEmail' => 'nullable|email',
           'email' => 'required|email',
 	        'shirts' => 'required',
           'allergies' => 'required',
           'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
+
         if ($request->has('doc')) {
           $path = $request->file('doc')->storeAs(
           'documents',
@@ -59,12 +64,17 @@ class SignupController extends Controller
 
 
         Signup::create([
-          'name' => $request->name,
+          'first' => $request->name,
+          'last' => $request->last,
+          'guardianFirst' => $request->guardianFirst,
+          'guardianLast' => $request->guardianLast,
+          'guardianEmail' => $request->guardianEmail,
           'email' => $request->email,
           'allergies' => $request->allergies,
           'file_path' => $path,
           'shirts' => $request->shirts
         ]);
+
         Mail::to($request->email)->queue(new FormReceived($request->name));
         return view('success')->with([
           'name' => $request->name,

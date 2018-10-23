@@ -31,12 +31,25 @@
 @endif
     <form action="/join" class="" method="POST" enctype="multipart/form-data" id="form">
       {{ csrf_field() }}
+      <!-- First Name Field -->
       <div class="field">
         <label class="label">Name</label>
         <div class="control">
-          <input id="name" class="input" type="text" placeholder="First Last" name="name" onchange="hideErrors()">
+          <input id="name" class="input" type="text" placeholder="First Name" name="name" onchange="hideErrors()">
         </div>
       </div>
+      <!-- END First Name Field -->
+
+      <!-- Last Name Field -->
+      <div class="field">
+        <label class="label">Last</label>
+        <div class="control">
+          <input id="name" class="input" type="text" placeholder="Last Name" name="last" onchange="hideErrors()">
+        </div>
+      </div>
+      <!-- END Last Name Field -->
+
+      <!-- Email Field -->
       <div class="field">
         <label class="label">Email</label>
         <p class="control has-icons-left has-icons-right">
@@ -49,14 +62,51 @@
       </span>
         </p>
       </div>
+      <!-- END Email Field -->
 
+      <!-- Guardian First Name Field -->
+      <div class="field">
+        <label class="label">Parent / Guardian First Name</label>
+        <div class="control">
+          <input id="name" class="input" type="text" placeholder="Parent or Guardian First Name" name="guardianFirst" onchange="hideErrors()">
+        </div>
+      </div>
+      <!-- END Guardian First Name Field -->
+
+      <!-- Guardian Last Name Field -->
+      <div class="field">
+        <label class="label">Parent / Guardian Last Name</label>
+        <div class="control">
+          <input id="name" class="input" type="text" placeholder="Parent or Guardian Last Name" name="guardianLast" onchange="hideErrors()">
+        </div>
+      </div>
+      <!-- END Guardian Last Name Field -->
+
+      <!-- Guardian Email Field -->
+      <div class="field">
+        <label class="label">Parent / Guardian Email</label>
+        <p class="control has-icons-left has-icons-right">
+          <input id="email" class="input" type="email" placeholder="Parent or Guardian Email" name="guardianEmail" onchange="hideErrors()">
+          <span class="icon is-small is-left">
+        <i class="fa fa-envelope"></i>
+      </span>
+          <span class="icon is-small is-right">
+        <i class="fa fa-check"></i>
+      </span>
+        </p>
+      </div>
+      <!-- END Guardian Email Field -->
+
+      <!-- Allergies Field -->
       <div class="field">
         <label class="label">Allergies / Food Preferences</label>
         <div class="control">
           <textarea id="allergies" class="textarea" rows="5" placeholder="List All Allergies" name="allergies" onchange="hideErrors()"></textarea>
         </div>
       </div>
+      <!-- END Allergies Field -->
 
+      <!-- T-Shirt Size Field -->
       <div class="field">
         <label class="label">T-shirt Size</label>
         <p>
@@ -72,6 +122,9 @@
 	</div>
         </p>
       </div>
+      <!-- END T-Shirt Size Field -->
+
+      <!-- Permission Form Field -->
       <div class="field">
         <label class="label">Permission Form</label>
         <div class="file has-name">
@@ -90,6 +143,8 @@
           </label>
         </div>
       </div>
+      <!-- END Permission Form Field -->
+      
       <div class="field is-grouped is-grouped-centered">
         <div class="control">
           <a href="/" class="button is-light">Cancel</a>
