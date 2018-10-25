@@ -97,8 +97,8 @@
         <div class="control has-icons-left">
           <input id="guardianNumber" class="input" type="tel" placeholder="555-555-5555" name="guardianNumber" onchange="hideErrors()">
         </div>
-        <span class="icon is-small is-lefft"> <i class="fa fa-phone" aria-hidden="true">
-        </i>
+        <span class="icon is-small is-left">
+          <i class="fa fa-phone" aria-hidden="true"></i>
       </span>
       </div>
       <!-- END Guardian Phone Number -->
