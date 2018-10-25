@@ -94,12 +94,12 @@
       <!-- Guardian Phone Number -->
       <div class="field">
         <label class="label">Parent / Guardian Phone Number</label>
-        <div class="control has-icons-left">
+        <p class="control has-icons-left">
           <input id="guardianNumber" class="input" type="tel" placeholder="555-555-5555" name="guardianNumber" onchange="hideErrors()">
-        </div>
-        <span class="icon is-small is-left">
-          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span class="icon is-small is-left">
+        <i class="fa fa-phone" aria-hidden="true"></i>
       </span>
+        </p>
       </div>
       <!-- END Guardian Phone Number -->
 
