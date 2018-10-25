@@ -5,7 +5,7 @@
 <div class="section">
   <h1 class="title has-text-centered">Register Now</h1>
   <div class="columns is-mobile is-centered">
-    <div class="column is-half-desktop has-text-centered">
+    <div class="column is-two-thirds-desktop">
     <p>SheCode will be on December 1st 2018, starting at 10:00 am and ending at 2:30 pm in the <a href="https://goo.gl/maps/y6jrS4WREQ72">SIUE Engineering
       Building</a>.
       All participants will need a permission form signed by a parent or guardian at the start of SheCode.</p>
@@ -35,7 +35,7 @@
       <div class="field">
         <label class="label">Name</label>
         <div class="control">
-          <input id="name" class="input" type="text" placeholder="First Name" name="name" onchange="hideErrors()">
+          <input id="name" class="input" type="text" placeholder="First Name" name="name" onchange="hideErrors()" required>
         </div>
       </div>
       <!-- END First Name Field -->
@@ -44,7 +44,7 @@
       <div class="field">
         <label class="label">Last</label>
         <div class="control">
-          <input id="last" class="input" type="text" placeholder="Last Name" name="last" onchange="hideErrors()">
+          <input id="last" class="input" type="text" placeholder="Last Name" name="last" onchange="hideErrors()" required>
         </div>
       </div>
       <!-- END Last Name Field -->
@@ -52,13 +52,10 @@
       <!-- Email Field -->
       <div class="field">
         <label class="label">Email</label>
-        <p class="control has-icons-left has-icons-right">
-          <input id="email" class="input" type="email" placeholder="Email" name="email" onchange="hideErrors()">
+        <p class="control has-icons-left">
+          <input id="email" class="input" type="email" placeholder="Email" name="email" onchange="hideErrors()" required>
           <span class="icon is-small is-left">
         <i class="fa fa-envelope"></i>
-      </span>
-          <span class="icon is-small is-right">
-        <i class="fa fa-check"></i>
       </span>
         </p>
       </div>
@@ -85,13 +82,10 @@
       <!-- Guardian Email Field -->
       <div class="field">
         <label class="label">Parent / Guardian Email</label>
-        <p class="control has-icons-left has-icons-right">
+        <p class="control has-icons-left">
           <input id="guardianEmail" class="input" type="email" placeholder="Parent or Guardian Email" name="guardianEmail" onchange="hideErrors()">
           <span class="icon is-small is-left">
         <i class="fa fa-envelope"></i>
-      </span>
-          <span class="icon is-small is-right">
-        <i class="fa fa-check"></i>
       </span>
         </p>
       </div>
@@ -100,9 +94,12 @@
       <!-- Guardian Phone Number -->
       <div class="field">
         <label class="label">Parent / Guardian Phone Number</label>
-        <div class="control">
+        <div class="control has-icons-left">
           <input id="guardianNumber" class="input" type="tel" placeholder="555-555-5555" name="guardianNumber" onchange="hideErrors()">
         </div>
+        <span class="icon is-small is-lefft"> <i class="fa fa-phone" aria-hidden="true">
+        </i>
+      </span>
       </div>
       <!-- END Guardian Phone Number -->
 

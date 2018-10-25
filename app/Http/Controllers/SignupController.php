@@ -48,7 +48,7 @@ class SignupController extends Controller
           'guardianEmail' => 'nullable|email',
           'guardianNumber' => 'nullable|regex:/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/',
           'email' => 'required|email',
-            'shirts' => 'required',
+          'shirts' => 'required',
           'allergies' => 'required',
           'doc' => 'nullable'
         ]);
@@ -63,29 +63,10 @@ class SignupController extends Controller
             $path = 'no file';
         }
 
-        if (!empty($request->input('guardianFirst'))) {
-            $guardianFirstVar = $request->input('guardianFirst');
-        } else {
-            $guardianFirstVar = 'No Parent or Guardian Entered';
-        }
-
-        if (!empty($request->input('guardianLast'))) {
-            $guardianLastVar = $request->input('guardianLast');
-        } else {
-            $guardianLastVar = 'No Parent or Guardian Entered';
-        }
-
-        if (!empty($request->input('guardianEmail'))) {
-            $guardianEmailVar = $request->input('guardianEmail');
-        } else {
-            $guardianEmailVar = 'No Parent or Guardian Email Entered';
-        }
-
-        if (!empty($request->input('guardianNumber'))) {
-            $guardianNumberVar = $request->input('guardianNumber');
-        } else {
-            $guardianNumberVar = 'No Number';
-        }
+        $guardianFirstVar = $request->input('guardianFirst') ?? 'No Parent or Guardian Entered';
+        $guardianLastVar = $request->input('guardianLast') ?? 'No Parent or Guardian Entered';
+        $guardianEmailVar = $request->input('guardianEmail') ?? 'No Parent or Guardian Entered';
+        $guardianNumberVar = $request->input('guardianNumber') ?? 'No Parent or Guardian Entered';
 
         Signup::create([
           'first' => $request->name,
