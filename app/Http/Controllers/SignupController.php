@@ -42,29 +42,45 @@ class SignupController extends Controller
     {
         $this->validate($request, [
           'name' => 'required',
+          'last' => 'required',
+          'guardianFirst' => 'nullable',
+          'guardianLast' => 'nullable',
+          'guardianEmail' => 'nullable|email',
+          'guardianNumber' => 'nullable|regex:/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/',
           'email' => 'required|email',
-	        'shirts' => 'required',
+          'shirts' => 'required',
           'allergies' => 'required',
           'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
+
         if ($request->has('doc')) {
-          $path = $request->file('doc')->storeAs(
+            $path = $request->file('doc')->storeAs(
           'documents',
                   str_slug($request->name, '') . '.' . $request->file('doc')->getClientOriginalExtension()
           );
         } else {
-          $path = 'no file';
+            $path = 'no file';
         }
 
+        $guardianFirstVar = $request->input('guardianFirst') ?? 'No Parent or Guardian Entered';
+        $guardianLastVar = $request->input('guardianLast') ?? 'No Parent or Guardian Entered';
+        $guardianEmailVar = $request->input('guardianEmail') ?? 'No Parent or Guardian Entered';
+        $guardianNumberVar = $request->input('guardianNumber') ?? 'No Parent or Guardian Entered';
 
         Signup::create([
-          'name' => $request->name,
+          'first' => $request->name,
+          'last' => $request->last,
+          'guardianFirst' => $guardianFirstVar,
+          'guardianLast' => $guardianLastVar,
+          'guardianEmail' => $guardianEmailVar,
+          'guardianNumber' => $guardianNumberVar,
           'email' => $request->email,
           'allergies' => $request->allergies,
           'file_path' => $path,
           'shirts' => $request->shirts
         ]);
+
         Mail::to($request->email)->queue(new FormReceived($request->name));
         return view('success')->with([
           'name' => $request->name,

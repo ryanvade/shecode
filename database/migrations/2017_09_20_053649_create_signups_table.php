@@ -15,9 +15,14 @@ class CreateSignupsTable extends Migration
     {
         Schema::create('signups', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('first');
+            $table->string('last');
             $table->string('email');
-            $table->string('allergies');
+            $table->string('guardianFirst');
+            $table->string('guardianLast');
+            $table->string('guardianEmail');
+            $table->string('guardianNumber');
+            $table->string('allergies', 500);
             $table->string('file_path');
 	          $table->string('shirts');
             $table->timestamps();

@@ -5,15 +5,15 @@
 <div class="section">
   <h1 class="title has-text-centered">Register Now</h1>
   <div class="columns is-mobile is-centered">
-    <div class="column is-half-desktop has-text-centered">
+    <div class="column is-two-thirds-desktop">
     <p>SheCode will be on December 1st 2018, starting at 10:00 am and ending at 2:30 pm in the <a href="https://goo.gl/maps/y6jrS4WREQ72">SIUE Engineering
       Building</a>.
       All participants will need a permission form signed by a parent or guardian at the start of SheCode.</p>
-      <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf">Download Minor Permission Form</a>
+      <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf" target="_blank">Download Minor Permission Form</a>
       <br>
       <br>
       <p>If you or your child is over the age of 18, this form must be filled out and brought with you or uploaded below.</p>
-        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf">Download Adult Permission Form</a>
+        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf" target="_blank">Download Adult Permission Form</a>
     </div>
   </div>
 </div>
@@ -31,32 +31,88 @@
 @endif
     <form action="/join" class="" method="POST" enctype="multipart/form-data" id="form">
       {{ csrf_field() }}
+      <!-- First Name Field -->
       <div class="field">
         <label class="label">Name</label>
         <div class="control">
-          <input id="name" class="input" type="text" placeholder="First Last" name="name" onchange="hideErrors()">
+          <input id="name" class="input" type="text" placeholder="First Name" name="name" onchange="hideErrors()" required>
         </div>
       </div>
+      <!-- END First Name Field -->
+
+      <!-- Last Name Field -->
+      <div class="field">
+        <label class="label">Last</label>
+        <div class="control">
+          <input id="last" class="input" type="text" placeholder="Last Name" name="last" onchange="hideErrors()" required>
+        </div>
+      </div>
+      <!-- END Last Name Field -->
+
+      <!-- Email Field -->
       <div class="field">
         <label class="label">Email</label>
-        <p class="control has-icons-left has-icons-right">
-          <input id="email" class="input" type="email" placeholder="Email" name="email" onchange="hideErrors()">
+        <p class="control has-icons-left">
+          <input id="email" class="input" type="email" placeholder="Email" name="email" onchange="hideErrors()" required>
           <span class="icon is-small is-left">
         <i class="fa fa-envelope"></i>
       </span>
-          <span class="icon is-small is-right">
-        <i class="fa fa-check"></i>
+        </p>
+      </div>
+      <!-- END Email Field -->
+
+      <!-- Guardian First Name Field -->
+      <div class="field">
+        <label class="label">Parent / Guardian First Name</label>
+        <div class="control">
+          <input id="guardianFirst" class="input" type="text" placeholder="Parent or Guardian First Name" name="guardianFirst" onchange="hideErrors()">
+        </div>
+      </div>
+      <!-- END Guardian First Name Field -->
+
+      <!-- Guardian Last Name Field -->
+      <div class="field">
+        <label class="label">Parent / Guardian Last Name</label>
+        <div class="control">
+          <input id="guardianLast" class="input" type="text" placeholder="Parent or Guardian Last Name" name="guardianLast" onchange="hideErrors()">
+        </div>
+      </div>
+      <!-- END Guardian Last Name Field -->
+
+      <!-- Guardian Email Field -->
+      <div class="field">
+        <label class="label">Parent / Guardian Email</label>
+        <p class="control has-icons-left">
+          <input id="guardianEmail" class="input" type="email" placeholder="Parent or Guardian Email" name="guardianEmail" onchange="hideErrors()">
+          <span class="icon is-small is-left">
+        <i class="fa fa-envelope"></i>
       </span>
         </p>
       </div>
+      <!-- END Guardian Email Field -->
 
+      <!-- Guardian Phone Number -->
+      <div class="field">
+        <label class="label">Parent / Guardian Phone Number</label>
+        <p class="control has-icons-left">
+          <input id="guardianNumber" class="input" type="tel" placeholder="555-555-5555" name="guardianNumber" onchange="hideErrors()">
+          <span class="icon is-small is-left">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </span>
+        </p>
+      </div>
+      <!-- END Guardian Phone Number -->
+
+      <!-- Allergies Field -->
       <div class="field">
         <label class="label">Allergies / Food Preferences</label>
         <div class="control">
           <textarea id="allergies" class="textarea" rows="5" placeholder="List All Allergies" name="allergies" onchange="hideErrors()"></textarea>
         </div>
       </div>
+      <!-- END Allergies Field -->
 
+      <!-- T-Shirt Size Field -->
       <div class="field">
         <label class="label">T-shirt Size</label>
         <p>
@@ -72,6 +128,9 @@
 	</div>
         </p>
       </div>
+      <!-- END T-Shirt Size Field -->
+
+      <!-- Permission Form Field -->
       <div class="field">
         <label class="label">Permission Form</label>
         <div class="file has-name">
@@ -90,6 +149,8 @@
           </label>
         </div>
       </div>
+      <!-- END Permission Form Field -->
+
       <div class="field is-grouped is-grouped-centered">
         <div class="control">
           <a href="/" class="button is-light">Cancel</a>
